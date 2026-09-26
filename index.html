@@ -2,88 +2,79 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FATMA ROSE | Luxury Beauty</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Tajawal:wght@500;800&display=swap" rel="stylesheet">
+<title>FATMA ROSE</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Tajawal:wght@600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#fffaf8;color:#5a3a3a;font-family:'Tajawal',sans-serif}
-.nav{max-width:1250px;margin:0 auto;padding:22px 25px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-family:'Cormorant Garamond';font-size:28px;letter-spacing:3px;color:#b07a6b}
-.nav-links{display:flex;gap:22px;font-size:12px;letter-spacing:2px;color:#8a6a60}
-.nav-links .book{border:1px solid #d6a99c;padding:7px 18px;border-radius:20px;color:#b07a6b;text-decoration:none}
-.hero{max-width:1250px;margin:0 auto;padding:30px 25px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
-.badge{display:inline-block;background:#f3d6cf66;border:1px solid #e8b4a044;padding:6px 16px;border-radius:20px;font-size:11px;letter-spacing:2px;color:#8a5a4e;margin-bottom:20px}
-.hero h1{font-family:'Cormorant Garamond';font-size:62px;line-height:.95;color:#5a2e2e;font-weight:600}
-.hero h1 span{color:#b07a6b}
-.hero p{margin:18px 0;color:#8a7068;line-height:1.8;max-width:500px}
-.btns{display:flex;gap:14px;margin-top:22px;flex-wrap:wrap}
-.btn1{background:linear-gradient(135deg,#c48a7a,#a66a5a);color:#fff;padding:13px 28px;border-radius:30px;text-decoration:none;font-size:14px}
-.btn2{border:1px solid #d6a99c;color:#a66a5a;padding:13px 28px;border-radius:30px;text-decoration:none;font-size:14px;background:#fff}
-.hero-img{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 30px 80px rgba(180,120,100,.25)}
-.hero-img img{width:100%;height:520px;object-fit:cover;display:block}
-.rating{margin-top:22px;font-size:12px;color:#b07a6b;letter-spacing:1px}
-.services{max-width:1250px;margin:40px auto;padding:20px 25px}
-.sec-title{font-family:'Cormorant Garamond';font-size:36px;text-align:center;color:#5a2e2e;margin-bottom:8px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:30px}
-.card{background:#fff;border:1px solid #f0ddd6;border-radius:20px;padding:26px;text-align:center;transition:.4s}
-.card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(180,120,100,.15);border-color:#e8b4a0}
-.card .icon{font-size:28px;margin-bottom:12px}
-.card h3{font-family:'Cormorant Garamond';font-size:22px;color:#5a2e2e}
-.card p{color:#8a7068;font-size:14px;margin:12px 0;line-height:1.7}
-.meta{color:#b07a6b;font-size:12px;letter-spacing:1px;margin-top:10px}
-.vip{max-width:900px;margin:60px auto;background:linear-gradient(135deg,#fff5f2,#f9e8e2);border:1px solid #f0ddd6;border-radius:24px;padding:50px 30px;text-align:center}
-.footer{max-width:1250px;margin:50px auto 0;padding:25px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px;border-top:1px solid #f0ddd6;color:#a88a80;font-size:12px;letter-spacing:1px}
-.wa{position:fixed;bottom:24px;left:24px;background:#25D366;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 10px 30px rgba(37,211,102,.4);z-index:99}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:46px}.hero-img img{height:400px}}
+body{font-family:'Tajawal',sans-serif}
+.wrap{background:url('https://images.unsplash.com/photo-1618220179428-22790b461013?w=1400') center/cover;min-height:100vh;padding:20px}
+.main{max-width:1180px;margin:0 auto;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-radius:28px;overflow:hidden;box-shadow:0 30px 90px rgba(120,60,50,.18);border:1px solid #f2d8cf}
+.top{padding:24px 36px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Cormorant Garamond';font-size:26px;letter-spacing:3px;color:#9c6d5f;direction:ltr}
+.menu{display:flex;gap:22px;font-size:12px;color:#7a5a50;direction:ltr}
+.menu .book{border:1px solid #d8a99a;padding:7px 18px;border-radius:20px;color:#9c6d5f;text-decoration:none}
+.hero{display:grid;grid-template-columns:1fr 1.1fr;gap:30px;padding:30px 36px 40px;align-items:center;background:linear-gradient(135deg,#fdf0eb,#fef9f6)}
+.badge{display:inline-block;background:#e8c4b8a0;border:1px solid #e8c4b8;padding:7px 16px;border-radius:6px;font-size:11px;letter-spacing:2px;color:#7a5a50;margin-bottom:20px;direction:ltr}
+.hero h1{font-family:'Cormorant Garamond';font-size:56px;line-height:1.05;color:#5e3a32;direction:ltr;text-align:left}
+.hero p{margin-top:16px;color:#8a6a60;font-size:15px;line-height:1.9}
+.btns{margin-top:24px;display:flex;gap:14px;direction:ltr;justify-content:flex-start}
+.b1{background:#b87f6e;color:#fff;padding:13px 30px;border-radius:8px;text-decoration:none}
+.b2{border:1px solid #d8a99a;color:#9c6d5f;padding:13px 30px;border-radius:8px;text-decoration:none;background:#fff}
+.stars{margin-top:20px;color:#c89a7a;font-size:12px;direction:ltr;text-align:left}
+.img-box{border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.15)}
+.img-box img{width:100%;height:420px;object-fit:cover}
+.mid{padding:45px 36px;background:#fff}
+.mid h2{font-family:'Cormorant Garamond';font-size:32px;text-align:center;color:#2e1a17;direction:ltr}
+.sub{color:#a88a80;text-align:center;font-size:12px;letter-spacing:2px;margin-top:5px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.box{border:1px solid #e9d5cd;border-radius:18px;padding:28px;text-align:center;background:#fff;transition:.3s}
+.box:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(180,100,80,.12)}
+.box h3{font-size:20px;color:#2e1a17;margin:10px 0}
+.box p{font-size:14px;color:#7a5a50;line-height:1.7}
+.price{margin-top:12px;font-size:12px;color:#b87f6e}
+.foot{padding:16px 36px;display:flex;justify-content:space-between;background:#fdf0eb;font-size:11px;color:#9c6d5f;direction:ltr;flex-wrap:wrap;gap:10px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.hero h1{font-size:42px}}
 </style>
 </head>
 <body>
-<div class="nav">
-<div class="logo">🌹 FATMA ROSE</div>
-<div class="nav-links"><span>خدماتنا</span><span>من نحن</span><a class="book" href="https://wa.me/905364695079">احجزي الآن</a></div>
+<div class="wrap">
+<div class="main">
+<div class="top">
+<div class="logo">FATMA ROSE 🌹</div>
+<div class="menu"><span>HOME</span><span>SERVICES</span><a class="book" href="https://wa.me/905364695079">BOOK NOW</a></div>
 </div>
 
 <div class="hero">
 <div>
 <div class="badge">EST. 2021 • LUXURY BEAUTY & SKINCARE • ANTAKYA</div>
-<h1>Rose Gold Luxury<br><span>Beauty & Care</span></h1>
-<p>مركز فاطمة روز الفخم - مساحة هادئة للجمال والاسترخاء.<br>
-نقدم علاجات روز جولد الفاخرة - قص - لف - أظافر - سكين كير<br>
-بمنتجات عالمية L'Oreal & Kerastase</p>
+<h1 style="direction:ltr;text-align:right">Rose Gold Luxury<br>Beauty & Skincare</h1>
+<p>مركز فاطمة روز الفخم في أنطاكيا<br>
+مساحة هادئة للجمال والاسترخاء بمنتجات عالمية</p>
 <div class="btns">
-<a class="btn1" href="https://wa.me/905364695079?text=مرحبا%20FATMA%20ROSE%20🌹%20بدي%20احجز%20موعد">احجزي الآن 🌹</a>
-<a class="btn2" href="#services">شوفي خدماتنا</a>
+<a class="b1" href="https://wa.me/905364695079?text=مرحبا%20FATMA%20ROSE%20🌹%20بدي%20احجز">احجزي الآن</a>
+<a class="b2" href="#services">خدماتنا</a>
 </div>
-<div class="rating">⭐⭐⭐⭐⭐ 5.0 • +200 زبونة سعيدة • للحجز في أنطاكيا</div>
+<div class="stars">★★★★★ 5.0 • +200 زبونة • Antakya • +90 536 469 50 79</div>
 </div>
-<div class="hero-img"><img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=800"></div>
+<div class="img-box"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800"></div>
 </div>
 
-<div class="services" id="services">
-<div class="sec-title">Signature Treatments</div>
-<p style="text-align:center;color:#a88a80;letter-spacing:2px;font-size:12px">خدماتنا الملكية الفاخرة</p>
+<div class="mid" id="services">
+<h2>خدماتنا الفاخرة</h2>
+<div class="sub">SIGNATURE TREATMENTS</div>
 <div class="grid">
-<div class="card"><div class="icon">💇‍♀️</div><h3>قص شعر Rose Cut</h3><p>قصات عصرية فرنسية - قص أطفال - مع سشوار ملكي ولمسة روز</p><div class="meta">• 60 دقيقة • ابتداءً من 250 TL</div></div>
-<div class="card"><div class="icon">🌀</div><h3>Rose Gold Waves - لف</h3><p>ويفي روز - تسريحة عرايس فاخرة - لف مناسبات وسهرات</p><div class="meta">• 90 دقيقة • ابتداءً من 400 TL</div></div>
-<div class="card"><div class="icon">💅</div><h3>Luxury Nails - أظافر</h3><p>جل - اكريليك - مناكير دائم - تصاميم روز جولد حصرية</p><div class="meta">• 60 دقيقة • ابتداءً من 350 TL</div></div>
-<div class="card"><div class="icon">✨</div><h3>Hydrating Rose Facial</h3><p>تنظيف عميق بالورد - هيدرافيشل - ماسك ذهب روز</p><div class="meta">• 60 دقيقة • ابتداءً من 500 TL</div></div>
-<div class="card"><div class="icon">👰</div><h3>Rose Bride - باقة العروس</h3><p>يوم كامل VIP - مكياج + تسريحة + أظافر + سكين كير</p><div class="meta">• يوم كامل • عرض خاص</div></div>
-<div class="card"><div class="icon">🎨</div><h3>Hair Color Rose</h3><p>صبغة روز - خصل - بروتين أصلي - كيراتين</p><div class="meta">• 120 دقيقة • ابتداءً من 600 TL</div></div>
+<div class="box"><div style="font-size:26px">✨</div><h3>تنظيف بشرة بالورد</h3><p>تنظيف عميق بالورد وماسك الذهب - لبشرة مشرقة وناعمة كالحرير</p><div class="price">• 60 دقيقة • ابتداءً من 500 ليرة</div></div>
+<div class="box"><div style="font-size:26px">💇‍♀️</div><h3>قص ولف شعر روز</h3><p>قصات فرنسية عصرية - لف ويفي - تسريحات عرايس ملكية فخمة</p><div class="price">• 90 دقيقة • ابتداءً من 400 ليرة</div></div>
+<div class="box"><div style="font-size:26px">💅</div><h3>أظافر روز جولد</h3><p>جل - اكريليك - مناكير دائم - تصاميم حصرية بلون الروز جولد الفخم</p><div class="price">• 60 دقيقة • ابتداءً من 350 ليرة</div></div>
 </div>
 </div>
 
-<div class="vip">
-<h2 style="font-family:Cormorant Garamond;font-size:32px;color:#5a2e2e">FATMA ROSE - صالون فاطمة الفخم</h2>
-<p style="margin:18px 0;color:#8a7068;line-height:2">أنا فاطمة - خبيرة تجميل في أنطاكيا<br>5 سنوات خبرة - أستخدم أجود الماركات العالمية<br><b style="color:#b07a6b">الجمال الناعم هو سرنا 🌹</b></p>
-<a class="btn1" href="https://wa.me/905364695079">+90 536 469 50 79 - تواصلي واتساب</a>
+<div class="foot">
+<span>📷 @fatmarose.beauty</span>
+<span>Open 09:00-20:00 | Antakya - Hatay</span>
+<span>+90 536 469 50 79 • FATMA ROSE 🌹</span>
 </div>
-
-<div class="footer">
-<span>📍 Antakya - Hatay | FATMA ROSE</span>
-<span>Open 09:00 - 20:00 | @fatma.rose.beauty</span>
-<span style="direction:ltr">+90 536 469 50 79 • www.fatmarose.com</span>
 </div>
-
-<a class="wa" href="https://wa.me/905364695079">💬</a>
+</div>
 </body>
 </html>
