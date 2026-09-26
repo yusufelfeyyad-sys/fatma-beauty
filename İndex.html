@@ -2,82 +2,111 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FATMA ROSE</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Tajawal:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>FATMA BEAUTY - Hatay Antakya</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Tajawal',sans-serif;background:#fff0eb}
-.wrap{background:linear-gradient(180deg,#fdf0eb 0%,#fce2d6 40%,#f9c9b6 70%,#f5b0a0 100%);min-height:100vh;padding:20px}
-.main{max-width:1180px;margin:0 auto;background:rgba(255,255,255,.94);border-radius:28px;overflow:hidden;box-shadow:0 30px 90px rgba(120,60,50,.25);border:1px solid #f2d8cf}
-.top{padding:24px 36px;display:flex;justify-content:space-between;align-items:center;background:#fff}
-.logo{font-family:'Cormorant Garamond';font-size:26px;letter-spacing:3px;color:#9c6d5f;direction:ltr}
-.menu{display:flex;gap:22px;font-size:12px;color:#7a5a50;direction:ltr;align-items:center}
-.menu .book{border:1px solid #d8a99a;padding:7px 18px;border-radius:20px;color:#9c6d5f;text-decoration:none}
-.hero{display:grid;grid-template-columns:1fr 1.1fr;gap:30px;padding:30px 36px 40px;align-items:center;background:linear-gradient(135deg,#fdf0eb,#fff5f2)}
-.badge{display:inline-block;background:#e8c4b8a0;border:1px solid #e8c4b8;padding:7px 16px;border-radius:6px;font-size:11px;letter-spacing:2px;color:#7a5a50;margin-bottom:20px;direction:ltr}
-.hero h1{font-family:'Cormorant Garamond';font-size:56px;line-height:1.05;color:#5e3a32;direction:ltr;text-align:left}
-.hero p{margin-top:16px;color:#8a6a60;font-size:15px;line-height:1.9}
-.btns{margin-top:24px;display:flex;gap:14px;direction:ltr}
-.b1{background:#b87f6e;color:#fff;padding:13px 30px;border-radius:8px;text-decoration:none;display:inline-flex;gap:8px}
-.b2{border:1px solid #d8a99a;color:#9c6d5f;padding:13px 30px;border-radius:8px;text-decoration:none;background:#fff}
-.social-hero{margin-top:22px;display:flex;gap:14px;direction:ltr;align-items:center;flex-wrap:wrap}
-.social-hero a{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:18px}
-.insta{background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:#fff}
-.tiktok{background:#000;color:#fff}
-.stars{margin-top:18px;color:#c89a7a;font-size:12px;direction:ltr;text-align:left}
-.img-box{border-radius:20px;overflow:hidden}
-.img-box img{width:100%;height:420px;object-fit:cover}
-.mid{padding:50px 36px;background:linear-gradient(180deg,#ffffff 0%,#fff5f2 30%,#fde8df 70%,#fbd5c5 100%)}
-.mid h2{font-family:'Cormorant Garamond';font-size:32px;text-align:center;color:#2e1a17;direction:ltr}
-.sub{color:#a88a80;text-align:center;font-size:12px;letter-spacing:2px;margin-top:5px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:32px}
-.box{border:1px solid #f0c4b4;border-radius:20px;padding:34px;text-align:center;background:#fff;box-shadow:0 10px 30px rgba(200,120,100,.1)}
-.box h3{font-size:20px;color:#2e1a17;margin:12px 0}
-.box p{font-size:14px;color:#7a5a50;line-height:1.8}
-.pink-bottom{background:linear-gradient(135deg,#f9b0a0,#e8937a);padding:50px 36px;text-align:center;color:#fff}
-.foot{padding:18px 36px;display:flex;justify-content:space-between;background:#5e3a32;font-size:12px;color:#f5d0c0;direction:ltr;flex-wrap:wrap;gap:12px;align-items:center}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+body{background:#080808;color:#fff;font-family:Arial}
+nav{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:#000;border-bottom:1px solid #1a1a1a;position:sticky;top:0;z-index:99}
+.logo{color:#d7b77e;font-weight:700;letter-spacing:2px}
+nav ul{display:flex;list-style:none;gap:12px;font-size:10px;color:#aaa}
+.btn-gold{border:1px solid #d7b77e;color:#d7b77e;padding:6px 14px;border-radius:20px;background:transparent;cursor:pointer;font-size:11px}
+.hero{position:relative;height:380px;background:#111 url('https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=800') center/cover;display:flex;align-items:center}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#000 40%,transparent)}
+.hero-text{position:relative;z-index:2;padding:20px;max-width:55%}
+.hero-text h1{font-size:28px;color:#e8c78a;line-height:1.2}
+.hero-text p{color:#bbb;font-size:11px;margin:10px 0;line-height:1.6}
+.hero-btn{background:#d7b77e;color:#000;padding:9px 18px;border-radius:6px;border:none;font-size:12px;cursor:pointer}
+.feats{display:grid;grid-template-columns:repeat(4,1fr);background:#0e0e0e;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;text-align:center;padding:15px 5px}
+.feats div{border-left:1px solid #1f1f1f;padding:10px 5px;font-size:10px;color:#aaa}
+.mid{display:flex;flex-wrap:wrap;background:#0e0e0e}
+.mid-img{flex:1;min-width:300px;height:250px;background:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800') center/cover}
+.mid-text{flex:1;min-width:300px;padding:30px;display:flex;flex-direction:column;justify-content:center}
+.mid-text h2{color:#e8c78a;font-size:18px}
+.mid-text p{color:#888;font-size:11px;margin:12px 0;line-height:1.7}
+.elegance{position:relative;height:300px;background:#111 url('https://images.unsplash.com/photo-1523263685509-57c1d050d19b?q=80&w=800') center/cover;display:flex;align-items:center;justify-content:center;text-align:center}
+.elegance::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.6)}
+.elegance div{position:relative;z-index:2}
+.elegance h2{color:#fff;font-size:20px;margin-bottom:8px}
+.services{background:#080808;padding:25px 15px;display:none}
+.services.show{display:block}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.card{background:#141414;border-radius:6px;overflow:hidden;border:1px solid #222}
+.card-img{height:70px;background:#222;background-size:cover}
+.card p{text-align:center;font-size:10px;padding:8px;color:#d7b77e}
+.price-list{padding:20px}
+.row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #1a1a1a;font-size:12px}
+.row b{color:#d7b77e}
+.foot{text-align:center;padding:20px;background:#000;color:#666;font-size:11px;border-top:1px solid #1a1a1a}
 </style>
 </head>
 <body>
-<div class="wrap">
-<div class="main">
-<div class="top"><div class="logo">FATMA BEAUTY</div><div class="menu"><span>HOME</span><span>SERVICES</span><a class="book" href="https://wa.me/905364695079">BOOK NOW</a></div></div>
+
+<nav>
+<div class="logo">F FATMA BEAUTY</div>
+<ul><li>الرئيسية</li><li>من نحن</li><li>خدماتنا</li><li>عن فاطمة</li><li>تواصل معنا</li></ul>
+<button class="btn-gold" onclick="window.location.href='https://wa.me/905527068075'">احجزي موعدك</button>
+</nav>
+
 <div class="hero">
+<div class="hero-text">
+<h1>جمالك ..<br>بأدق التفاصيل</h1>
+<p>نقدم لك تجربة جمال متكاملة في حتاي - انطاكيا خدمات بالبشرة والمكياج في مكان واحد فاخر</p>
+<button class="hero-btn" onclick="document.getElementById('services').classList.toggle('show')">→ احجزي موعدك الآن</button>
+</div>
+</div>
+
+<div class="feats">
+<div>فريق متخصص</div>
+<div>بيئة مريحة وفاخرة</div>
+<div>منتجات عالية الجودة</div>
+<div>نتائج مضمونة</div>
+</div>
+
+<div class="mid">
+<div class="mid-img"></div>
+<div class="mid-text">
+<h2>مكانك المثالي للجمال</h2>
+<p>من خدمات الشعر إلى العناية بالبشرة والمكياج، نحن هنا لنبقى جمالك بأسلوب عصري وفاخر</p>
+<button class="btn-gold" onclick="document.getElementById('services').classList.toggle('show')">تعرفي على خدماتنا</button>
+</div>
+</div>
+
+<div class="elegance">
 <div>
-<div class="badge">EST. 2021 • LUXURY BEAUTY • ANTAKYA</div>
-<h1 style="direction:ltr;text-align:right">Rose Gold Luxury<br>Beauty & Skincare</h1>
-<p>مركز فاطمة في أنطاكيا</p>
-<div class="btns"><a class="b1" href="https://wa.me/905364695079">احجزي الآن</a><a class="b2" href="#services">خدماتنا</a></div>
-<div class="social-hero">
-<a class="insta" href="https://instagram.com/fatos_iste.26" target="_blank"><i class="fab fa-instagram"></i></a>
-<span style="font-size:12px;color:#9c6d5f">fatos_iste.26</span>
-<a class="tiktok" href="https://tiktok.com/@fatos_iste.27" target="_blank" style="margin-right:15px"><i class="fab fa-tiktok"></i></a>
-<span style="font-size:12px;color:#9c6d5f">fatos_iste.27</span>
+<h2>أناقة .. في كل تفصيلة</h2>
+<p style="color:#aaa;font-size:10px">من تسريحات الشعر إلى المكياج لمسات فاطمة تضمن لك إطلالة ساحرة</p>
+<button class="btn-gold" style="margin-top:12px" onclick="document.getElementById('services').classList.toggle('show')">احجزي موعدك</button>
 </div>
-<div class="stars">5.0 • +200 زبونة • Antakya</div>
 </div>
-<div class="img-box"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800"></div>
-</div>
-<div class="mid" id="services">
-<h2>خدماتنا الفاخرة</h2><div class="sub">SIGNATURE TREATMENTS</div>
+
+<!-- الخدمات - بتنفتح بالكبسة -->
+<div id="services" class="services show">
+<h2 style="text-align:center;color:#e8c78a;margin-bottom:15px">خدماتنا</h2>
 <div class="grid">
-<div class="box"><h3>تنظيف بشرة بالورد</h3><p>تنظيف عميق بالورد وماسك الذهب الفاخر لبشرة مشرقة</p></div>
-<div class="box"><h3>قص ولف شعر</h3><p>قصات فرنسية عصرية - لف ويفي - تسريحات عرايس ملكية</p></div>
-<div class="box"><h3>أظافر روز جولد</h3><p>جل - اكريليك - مناكير دائم - تصاميم حصرية</p></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1515688594390-b649af70d282?q=80&w=300')"></div><p>المكياج</p></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=300')"></div><p>خدمات الأظافر</p></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1570172619644-dfd03ed1350b?q=80&w=300')"></div><p>العناية بالبشرة</p></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=300')"></div><p>تصفيف الشعر</p></div>
+</div>
+
+<div class="price-list">
+<div class="row"><span>Kirpik Lifting</span><b>500 TL</b></div>
+<div class="row"><span>İpek Kirpik</span><b>700 TL</b></div>
+<div class="row"><span>Protez Tırnak</span><b>600 TL</b></div>
+<div class="row"><span>Kalıcı Oje</span><b>400 TL</b></div>
+<div class="row"><span>Gelin Makyajı</span><b>1.500 TL</b></div>
+<div class="row"><span>Saç Kesimi</span><b>300 TL</b></div>
+<div class="row"><span>Kaş Laminasyonu</span><b>400 TL</b></div>
 </div>
 </div>
-<div class="pink-bottom">
-<h2 style="font-family:Cormorant Garamond">تابعينا</h2>
-<p>انستا: @fatos_iste.26 | تيك توك: @fatos_iste.27</p>
-<div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:15px">
-<a href="https://instagram.com/fatos_iste.26" target="_blank" style="background:#fff;color:#d62976;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:800"><i class="fab fa-instagram"></i> fatos_iste.26</a>
-<a href="https://tiktok.com/@fatos_iste.27" target="_blank" style="background:#000;color:#fff;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:800"><i class="fab fa-tiktok"></i> fatos_iste.27</a>
+
+<div class="foot">
+<p>FATMA BEAUTY • Hatay Antakya • 0 (552) 706 80 75</p>
+<p>مفتوح يومياً 10:00 - 22:00</p>
 </div>
-</div>
-<div class="foot"><span>Antakya • 09:00-20:00</span><span>fatos_iste.26 | fatos_iste.27 • +90 536 469 50 79</span></div>
-</div>
-</div>
+
+<script>
+function toggleServices(){document.getElementById('services').classList.toggle('show')}
+</script>
 </body>
 </html>
