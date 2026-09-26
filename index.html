@@ -1,93 +1,112 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Fatma Beauty - Hatay Antakya | 0 (552) 706 80 75</title>
+<title>FATMA BEAUTY - Hatay Antakya</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui;background:#120a12;color:#fff}
-.top{background:#ff4da6;text-align:center;padding:10px;font-weight:900}
-.hero{text-align:center;padding:30px 15px;background:linear-gradient(#2a152a,#000)}
-.hero img{width:100%;max-width:400px;border-radius:20px;border:2px solid #ff4da6}
-.num{background:#ff4da6;color:#fff;display:inline-block;padding:14px 30px;border-radius:50px;font-size:24px;font-weight:900;margin:15px 0}
-.grid{max-width:850px;margin:20px auto;padding:0 12px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(max-width:650px){.grid{grid-template-columns:1fr}}
-.card{background:#1e141e;border:1px solid #3d2340;border-radius:16px;padding:16px}
-.card h3{color:#ff8ac2;margin-bottom:10px;font-size:16px;border-bottom:1px solid #333;padding-bottom:6px}
-.row{display:flex;justify-content:space-between;padding:5px 0;font-size:13.5px;border-bottom:1px dashed #2d2d2d}
-.row b{color:#ff8ac2}
-.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:20px}
-.btn{padding:14px 26px;border-radius:50px;text-decoration:none;font-weight:900}
-.call{background:#ff4da6;color:#fff}
-.wa{background:#25D366;color:#fff}
-.map{max-width:850px;margin:20px auto;padding:0 12px}
-.map iframe{width:100%;height:280px;border:0;border-radius:16px}
-.foot{text-align:center;color:#777;padding:25px;font-size:12px}
+body{background:#080808;color:#fff;font-family:Arial}
+nav{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:#000;border-bottom:1px solid #1a1a1a;position:sticky;top:0;z-index:99}
+.logo{color:#d7b77e;font-weight:700;letter-spacing:2px}
+nav ul{display:flex;list-style:none;gap:12px;font-size:10px;color:#aaa}
+.btn-gold{border:1px solid #d7b77e;color:#d7b77e;padding:6px 14px;border-radius:20px;background:transparent;cursor:pointer;font-size:11px}
+.hero{position:relative;height:380px;background:#111 url('https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=800') center/cover;display:flex;align-items:center}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#000 40%,transparent)}
+.hero-text{position:relative;z-index:2;padding:20px;max-width:55%}
+.hero-text h1{font-size:28px;color:#e8c78a;line-height:1.2}
+.hero-text p{color:#bbb;font-size:11px;margin:10px 0;line-height:1.6}
+.hero-btn{background:#d7b77e;color:#000;padding:9px 18px;border-radius:6px;border:none;font-size:12px;cursor:pointer}
+.feats{display:grid;grid-template-columns:repeat(4,1fr);background:#0e0e0e;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;text-align:center;padding:15px 5px}
+.feats div{border-left:1px solid #1f1f1f;padding:10px 5px;font-size:10px;color:#aaa}
+.mid{display:flex;flex-wrap:wrap;background:#0e0e0e}
+.mid-img{flex:1;min-width:300px;height:250px;background:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800') center/cover}
+.mid-text{flex:1;min-width:300px;padding:30px;display:flex;flex-direction:column;justify-content:center}
+.mid-text h2{color:#e8c78a;font-size:18px}
+.mid-text p{color:#888;font-size:11px;margin:12px 0;line-height:1.7}
+.elegance{position:relative;height:300px;background:#111 url('https://images.unsplash.com/photo-1523263685509-57c1d050d19b?q=80&w=800') center/cover;display:flex;align-items:center;justify-content:center;text-align:center}
+.elegance::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.6)}
+.elegance div{position:relative;z-index:2}
+.elegance h2{color:#fff;font-size:20px;margin-bottom:8px}
+.services{background:#080808;padding:25px 15px;display:none}
+.services.show{display:block}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.card{background:#141414;border-radius:6px;overflow:hidden;border:1px solid #222}
+.card-img{height:70px;background:#222;background-size:cover}
+.card p{text-align:center;font-size:10px;padding:8px;color:#d7b77e}
+.price-list{padding:20px}
+.row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #1a1a1a;font-size:12px}
+.row b{color:#d7b77e}
+.foot{text-align:center;padding:20px;background:#000;color:#666;font-size:11px;border-top:1px solid #1a1a1a}
 </style>
 </head>
 <body>
-<div class="top">Fatma Beauty - Hatay Antakya - 0 (552) 706 80 75</div>
+
+<nav>
+<div class="logo">F FATMA BEAUTY</div>
+<ul><li>الرئيسية</li><li>من نحن</li><li>خدماتنا</li><li>عن فاطمة</li><li>تواصل معنا</li></ul>
+<button class="btn-gold" onclick="window.location.href='https://wa.me/905527068075'">احجزي موعدك</button>
+</nav>
 
 <div class="hero">
-<img src="fatma.jpg" alt="Fatma Beauty Antakya">
-<h1 style="margin-top:15px;color:#ff8ac2">Güzelliğinize Bizimle Dokunun ♡</h1>
-<p>Hatay Antakya'da hizmetinizdeyiz</p>
-<div class="num">0 (552) 706 80 75</div>
-<div class="btns">
-<a class="btn call" href="tel:05527068075">📞 0552 706 80 75</a>
-<a class="btn wa" href="https://wa.me/905527068075?text=Merhaba%20Fatma%20Antakya%20randevu%20almak%20istiyorum">WhatsApp Randevu</a>
+<div class="hero-text">
+<h1>جمالك ..<br>بأدق التفاصيل</h1>
+<p>نقدم لك تجربة جمال متكاملة في حتاي - انطاكيا خدمات بالبشرة والمكياج في مكان واحد فاخر</p>
+<button class="hero-btn" onclick="document.getElementById('services').classList.toggle('show')">→ احجزي موعدك الآن</button>
 </div>
-<p style="color:#aaa">📍 Hatay Antakya - Tüm işlemlerde uygun fiyatlar!</p>
 </div>
 
+<div class="feats">
+<div>فريق متخصص</div>
+<div>بيئة مريحة وفاخرة</div>
+<div>منتجات عالية الجودة</div>
+<div>نتائج مضمونة</div>
+</div>
+
+<div class="mid">
+<div class="mid-img"></div>
+<div class="mid-text">
+<h2>مكانك المثالي للجمال</h2>
+<p>من خدمات الشعر إلى العناية بالبشرة والمكياج، نحن هنا لنبقى جمالك بأسلوب عصري وفاخر</p>
+<button class="btn-gold" onclick="document.getElementById('services').classList.toggle('show')">تعرفي على خدماتنا</button>
+</div>
+</div>
+
+<div class="elegance">
+<div>
+<h2>أناقة .. في كل تفصيلة</h2>
+<p style="color:#aaa;font-size:10px">من تسريحات الشعر إلى المكياج لمسات فاطمة تضمن لك إطلالة ساحرة</p>
+<button class="btn-gold" style="margin-top:12px" onclick="document.getElementById('services').classList.toggle('show')">احجزي موعدك</button>
+</div>
+</div>
+
+<!-- الخدمات - بتنفتح بالكبسة -->
+<div id="services" class="services show">
+<h2 style="text-align:center;color:#e8c78a;margin-bottom:15px">خدماتنا</h2>
 <div class="grid">
-<div class="card"><h3>👁️ Kirpik İşlemleri</h3>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1515688594390-b649af70d282?q=80&w=300')"></div><p>المكياج</p></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=300')"></div><p>خدمات الأظافر</p></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1570172619644-dfd03ed1350b?q=80&w=300')"></div><p>العناية بالبشرة</p></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=300')"></div><p>تصفيف الشعر</p></div>
+</div>
+
+<div class="price-list">
 <div class="row"><span>Kirpik Lifting</span><b>500 TL</b></div>
 <div class="row"><span>İpek Kirpik</span><b>700 TL</b></div>
-<div class="row"><span>Doğal Kirpik</span><b>400 TL</b></div>
-<div class="row"><span>Kirpik Bakımı</span><b>300 TL</b></div></div>
-
-<div class="card"><h3>💇‍♀️ Kuaför İşlemleri</h3>
-<div class="row"><span>Saç Kesimi</span><b>300 TL</b></div>
-<div class="row"><span>Fön</span><b>250 TL</b></div>
-<div class="row"><span>Boya</span><b>800 TL'den</b></div>
-<div class="row"><span>Ombre / Balayage</span><b>1.500 TL'den</b></div>
-<div class="row"><span>Röfle</span><b>1.200 TL'den</b></div>
-<div class="row"><span>Keratin Bakımı</span><b>1.000 TL</b></div>
-<div class="row"><span>Saç Bakımı</span><b>600 TL</b></div></div>
-
-<div class="card"><h3>💅 Tırnak İşlemleri</h3>
 <div class="row"><span>Protez Tırnak</span><b>600 TL</b></div>
-<div class="row"><span>Jel Tırnak</span><b>500 TL</b></div>
 <div class="row"><span>Kalıcı Oje</span><b>400 TL</b></div>
-<div class="row"><span>Manikür</span><b>250 TL</b></div>
-<div class="row"><span>Nail Art</span><b>450 TL</b></div></div>
-
-<div class="card"><h3>💄 Makyaj İşlemleri</h3>
-<div class="row"><span>Günlük Makyaj</span><b>500 TL</b></div>
 <div class="row"><span>Gelin Makyajı</span><b>1.500 TL</b></div>
-<div class="row"><span>Nişan Makyajı</span><b>1.000 TL</b></div>
-<div class="row"><span>Özel Gün Makyajı</span><b>800 TL</b></div></div>
-
-<div class="card"><h3>🤍 Kaş İşlemleri</h3>
+<div class="row"><span>Saç Kesimi</span><b>300 TL</b></div>
 <div class="row"><span>Kaş Laminasyonu</span><b>400 TL</b></div>
-<div class="row"><span>Kaş Tasarımı</span><b>250 TL</b></div>
-<div class="row"><span>Kaş Boyama</span><b>200 TL</b></div></div>
-
-<div class="card" style="text-align:center"><h3>✨ Neden Biz?</h3>
-<p style="line-height:2;font-size:14px">♡ Hijyenik ortam<br>☆ Profesyonel ekip<br>♢ Kaliteli ürünler<br>♡ Memnuniyet garantisi</p>
 </div>
-</div>
-
-<div class="map">
-<h3 style="text-align:center;color:#ff8ac2;margin-bottom:10px">📍 Konum - Hatay Antakya</h3>
-<iframe src="https://www.google.com/maps?q=Hatay+Antakya&z=13&output=embed"></iframe>
 </div>
 
 <div class="foot">
-<b style="color:#ff8ac2">Fatma Beauty - Hatay Antakya</b><br>
-0 (552) 706 80 75 - Randevu için DM'den ulaşın ♡<br>
-Herkesi bekleriz.
+<p>FATMA BEAUTY • Hatay Antakya • 0 (552) 706 80 75</p>
+<p>مفتوح يومياً 10:00 - 22:00</p>
 </div>
+
+<script>
+function toggleServices(){document.getElementById('services').classList.toggle('show')}
+</script>
 </body>
 </html>
