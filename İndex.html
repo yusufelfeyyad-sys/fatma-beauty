@@ -1,112 +1,125 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="tr" dir="ltr">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>FATMA BEAUTY - Hatay Antakya</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#080808;color:#fff;font-family:Arial}
-nav{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:#000;border-bottom:1px solid #1a1a1a;position:sticky;top:0;z-index:99}
-.logo{color:#d7b77e;font-weight:700;letter-spacing:2px}
-nav ul{display:flex;list-style:none;gap:12px;font-size:10px;color:#aaa}
-.btn-gold{border:1px solid #d7b77e;color:#d7b77e;padding:6px 14px;border-radius:20px;background:transparent;cursor:pointer;font-size:11px}
-.hero{position:relative;height:380px;background:#111 url('https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=800') center/cover;display:flex;align-items:center}
-.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#000 40%,transparent)}
-.hero-text{position:relative;z-index:2;padding:20px;max-width:55%}
-.hero-text h1{font-size:28px;color:#e8c78a;line-height:1.2}
-.hero-text p{color:#bbb;font-size:11px;margin:10px 0;line-height:1.6}
-.hero-btn{background:#d7b77e;color:#000;padding:9px 18px;border-radius:6px;border:none;font-size:12px;cursor:pointer}
-.feats{display:grid;grid-template-columns:repeat(4,1fr);background:#0e0e0e;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;text-align:center;padding:15px 5px}
-.feats div{border-left:1px solid #1f1f1f;padding:10px 5px;font-size:10px;color:#aaa}
+body{background:#080808;color:#fff;font-family:Arial,Tahoma}
+nav{position:sticky;top:0;z-index:99;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:#000;border-bottom:1px solid #1a1a1a}
+.logo{color:#d7b77e;font-weight:800;letter-spacing:2px}
+.btn-gold{border:1px solid #d7b77e;color:#d7b77e;padding:7px 14px;border-radius:20px;background:transparent;font-size:11px;cursor:pointer}
+.hero{position:relative;min-height:380px;background:#111 url('https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=900') center/cover;display:flex;align-items:center}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#000 55%,transparent)}
+.hero-txt{position:relative;z-index:2;padding:22px;max-width:60%}
+.hero-txt h1{font-size:28px;color:#e8c78a;line-height:1.2}
+.hero-txt h1 span{color:#fff;font-size:15px;display:block;margin-top:6px;font-weight:400}
+.hero-txt p{color:#aaa;font-size:11px;margin:12px 0;line-height:1.6}
+.hero-btn{background:#d7b77e;color:#000;padding:10px 20px;border-radius:6px;border:none;font-size:12px;font-weight:700;cursor:pointer}
+.feats{display:grid;grid-template-columns:repeat(4,1fr);background:#0e0e0e;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;text-align:center}
+.feats div{padding:14px 5px;font-size:9px;color:#999;border-left:1px solid #1f1f1f}
+.feats b{display:block;font-size:12px;margin-bottom:4px}
 .mid{display:flex;flex-wrap:wrap;background:#0e0e0e}
-.mid-img{flex:1;min-width:300px;height:250px;background:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800') center/cover}
-.mid-text{flex:1;min-width:300px;padding:30px;display:flex;flex-direction:column;justify-content:center}
-.mid-text h2{color:#e8c78a;font-size:18px}
-.mid-text p{color:#888;font-size:11px;margin:12px 0;line-height:1.7}
+.mid-img{flex:1;min-width:300px;min-height:260px;background:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800') center/cover}
+.mid-txt{flex:1;min-width:300px;padding:30px;display:flex;flex-direction:column;justify-content:center}
+.mid-txt h2{color:#e8c78a;font-size:19px}
+.mid-txt p{color:#888;font-size:11px;margin:12px 0;line-height:1.7}
 .elegance{position:relative;height:300px;background:#111 url('https://images.unsplash.com/photo-1523263685509-57c1d050d19b?q=80&w=800') center/cover;display:flex;align-items:center;justify-content:center;text-align:center}
-.elegance::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.6)}
-.elegance div{position:relative;z-index:2}
-.elegance h2{color:#fff;font-size:20px;margin-bottom:8px}
-.services{background:#080808;padding:25px 15px;display:none}
-.services.show{display:block}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.card{background:#141414;border-radius:6px;overflow:hidden;border:1px solid #222}
-.card-img{height:70px;background:#222;background-size:cover}
-.card p{text-align:center;font-size:10px;padding:8px;color:#d7b77e}
-.price-list{padding:20px}
-.row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #1a1a1a;font-size:12px}
-.row b{color:#d7b77e}
-.foot{text-align:center;padding:20px;background:#000;color:#666;font-size:11px;border-top:1px solid #1a1a1a}
+.elegance::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.65)}
+.elegance div{position:relative;z-index:2;padding:20px}
+.elegance h2{font-size:22px;color:#fff}
+.elegance p{color:#bbb;font-size:11px;margin-top:6px}
+.sec{background:#080808;padding:0 12px;max-height:0;overflow:hidden;transition:.6s}
+.sec.open{max-height:5000px;padding:20px 12px}
+.cat{margin:18px 0;background:#111;border:1px solid #1e1e1e;border-radius:10px;padding:14px}
+.cat h3{color:#d7b77e;font-size:14px;margin-bottom:10px;border-bottom:1px solid #222;padding-bottom:8px}
+.row{display:flex;justify-content:space-between;padding:7px 0;font-size:12px;color:#ccc;border-bottom:1px dashed #1a1a1a}
+.row b{color:#d7b77e;white-space:nowrap;margin-right:10px}
+.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center;margin:15px 0}
+.badges div{background:#151515;border:1px solid #222;border-radius:8px;padding:10px 5px;font-size:9px;color:#999}
+.badge-pink{background:#d7b77e;color:#000!important;font-weight:700;text-align:center;padding:12px;border-radius:20px;margin:15px auto;display:block;max-width:280px;cursor:pointer}
+.foot{text-align:center;padding:22px;background:#000;color:#666;font-size:11px;border-top:1px solid #1a1a1a;line-height:1.6}
+.foot b{color:#d7b77e}
 </style>
 </head>
 <body>
 
 <nav>
-<div class="logo">F FATMA BEAUTY</div>
-<ul><li>الرئيسية</li><li>من نحن</li><li>خدماتنا</li><li>عن فاطمة</li><li>تواصل معنا</li></ul>
-<button class="btn-gold" onclick="window.location.href='https://wa.me/905527068075'">احجزي موعدك</button>
+<div class="logo">FATMA BEAUTY</div>
+<div style="font-size:10px;color:#666">Hatay Antakya • 0 (552) 706 80 75</div>
+<button class="btn-gold" onclick="toggleSec()">خدماتنا ♡</button>
 </nav>
 
 <div class="hero">
-<div class="hero-text">
-<h1>جمالك ..<br>بأدق التفاصيل</h1>
-<p>نقدم لك تجربة جمال متكاملة في حتاي - انطاكيا خدمات بالبشرة والمكياج في مكان واحد فاخر</p>
-<button class="hero-btn" onclick="document.getElementById('services').classList.toggle('show')">→ احجزي موعدك الآن</button>
+<div class="hero-txt">
+<h1>Güzelliğinize<br>Bizimle Dokunun ♡<span>Kendinizi daha özel, daha güzel hissetmeniz için buradayız...</span></h1>
+<p>جمالك بأدق التفاصيل - نقدم تجربة جمال متكاملة في قلب أنطاكيا</p>
+<button class="hero-btn" onclick="toggleSec()">→ احجزي موعدك الآن</button>
 </div>
 </div>
 
 <div class="feats">
-<div>فريق متخصص</div>
-<div>بيئة مريحة وفاخرة</div>
-<div>منتجات عالية الجودة</div>
-<div>نتائج مضمونة</div>
+<div><b>✓</b>نتائج مضمونة</div>
+<div><b>◆</b>منتجات عالية الجودة</div>
+<div><b>★</b>فريق متخصص</div>
+<div><b>♡</b>بيئة فاخرة</div>
 </div>
 
 <div class="mid">
 <div class="mid-img"></div>
-<div class="mid-text">
+<div class="mid-txt">
 <h2>مكانك المثالي للجمال</h2>
-<p>من خدمات الشعر إلى العناية بالبشرة والمكياج، نحن هنا لنبقى جمالك بأسلوب عصري وفاخر</p>
-<button class="btn-gold" onclick="document.getElementById('services').classList.toggle('show')">تعرفي على خدماتنا</button>
+<p>من قصات الشعر والتصفيف إلى العناية بالبشرة والمكياج، نحن هنا لنبرز جمالك بأسلوب عصري وراقي في Hatay Antakya</p>
+<button class="btn-gold" onclick="toggleSec()">تعرفي على خدماتنا</button>
 </div>
 </div>
 
 <div class="elegance">
 <div>
 <h2>أناقة .. في كل تفصيلة</h2>
-<p style="color:#aaa;font-size:10px">من تسريحات الشعر إلى المكياج لمسات فاطمة تضمن لك إطلالة ساحرة</p>
-<button class="btn-gold" style="margin-top:12px" onclick="document.getElementById('services').classList.toggle('show')">احجزي موعدك</button>
+<p>من تسريحات الشعر إلى المكياج لمسات فاطمة تضمن لك إطلالة ساحرة</p>
+<button class="btn-gold" style="margin-top:14px" onclick="toggleSec()">شوفي الأسعار</button>
 </div>
 </div>
 
-<!-- الخدمات - بتنفتح بالكبسة -->
-<div id="services" class="services show">
-<h2 style="text-align:center;color:#e8c78a;margin-bottom:15px">خدماتنا</h2>
-<div class="grid">
-<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1515688594390-b649af70d282?q=80&w=300')"></div><p>المكياج</p></div>
-<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=300')"></div><p>خدمات الأظافر</p></div>
-<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1570172619644-dfd03ed1350b?q=80&w=300')"></div><p>العناية بالبشرة</p></div>
-<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=300')"></div><p>تصفيف الشعر</p></div>
+<!-- كل الخدمات 22 خدمة -->
+<div id="sec" class="sec open">
+
+<div class="badges">
+<div>Hijyenik ortam</div>
+<div>Profesyonel ekip</div>
+<div>Kaliteli ürünler</div>
+<div>Memnuniyet garantisi</div>
 </div>
 
-<div class="price-list">
+<div class="cat">
+<h3>👁️ Kirpik İşlemleri</h3>
 <div class="row"><span>Kirpik Lifting</span><b>500 TL</b></div>
 <div class="row"><span>İpek Kirpik</span><b>700 TL</b></div>
+<div class="row"><span>Doğal Kirpik</span><b>400 TL</b></div>
+<div class="row"><span>Kirpik Bakımı</span><b>300 TL</b></div>
+</div>
+
+<div class="cat">
+<h3>💅 Tırnak İşlemleri</h3>
 <div class="row"><span>Protez Tırnak</span><b>600 TL</b></div>
+<div class="row"><span>Jel Tırnak</span><b>500 TL</b></div>
 <div class="row"><span>Kalıcı Oje</span><b>400 TL</b></div>
-<div class="row"><span>Gelin Makyajı</span><b>1.500 TL</b></div>
-<div class="row"><span>Saç Kesimi</span><b>300 TL</b></div>
+<div class="row"><span>Manikür (tırnak bakımı)</span><b>250 TL</b></div>
+<div class="row"><span>Nail Art</span><b>450 TL</b></div>
+</div>
+
+<div class="cat">
+<h3>👁️ Kaş İşlemleri</h3>
 <div class="row"><span>Kaş Laminasyonu</span><b>400 TL</b></div>
-</div>
-</div>
-
-<div class="foot">
-<p>FATMA BEAUTY • Hatay Antakya • 0 (552) 706 80 75</p>
-<p>مفتوح يومياً 10:00 - 22:00</p>
+<div class="row"><span>Kaş Tasarımı</span><b>250 TL</b></div>
+<div class="row"><span>Kaş Boyama</span><b>200 TL</b></div>
 </div>
 
-<script>
-function toggleServices(){document.getElementById('services').classList.toggle('show')}
-</script>
-</body>
-</html>
+<div class="cat">
+<h3>✂️ Kuaför İşlemleri</h3>
+<div class="row"><span>Saç Kesimi</span><b>300 TL</b></div>
+<div class="row"><span>Fön</span><b>250 TL</b></div>
+<div class="row"><span>Boya</span><b>800 TL'den başlayan</b></div>
+<div class="row"><span>Ombre / Balayage</span><b>1.500 TL'den başlayan</b></div>
+<div
