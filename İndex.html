@@ -3,114 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FATMA BEAUTY - هاتاي انطاكيا</title>
+<title>FATMA BEAUTY | Hatay Antakya</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#070707;color:#fff;font-family:Tahoma,Arial}
-.navbar{height:56px;background:#080808;border-bottom:1px solid #1a1a1a;display:flex;align-items:center;justify-content:space-between;padding:0 24px;position:sticky;top:0;z-index:100}
-.navbar .logo{color:#d7b77e;font-weight:900;letter-spacing:3px;font-size:20px}
-.navbar .links{display:flex;gap:18px;font-size:11px;color:#888}
-.navbar .links a{color:#888;text-decoration:none}
-.navbar .cta{border:1px solid #d7b77e;color:#d7b77e;padding:7px 16px;border-radius:20px;font-size:11px;text-decoration:none}
-.hero{position:relative;height:520px;background:#000;display:flex;align-items:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center top}
-.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.2) 100%)}
-.hero-content{position:relative;z-index:2;padding:40px 50px;max-width:50%}
-.hero-content h1{color:#e9c78a;font-size:44px;line-height:1.15;font-weight:900}
-.hero-content h1 span{color:#e9c78a;display:block}
-.hero-content p{color:#aaa;font-size:13px;margin:18px 0;line-height:1.8;max-width:380px}
-.gold-btn{background:#d7b77e;color:#000;padding:12px 24px;border-radius:6px;font-size:12px;font-weight:800;text-decoration:none;display:inline-block}
-.features{display:grid;grid-template-columns:repeat(4,1fr);background:#0d0d0d;border-top:1px solid #1c1c1c;border-bottom:1px solid #1c1c1c}
-.features div{padding:28px 10px;text-align:center;border-left:1px solid #1e1e1e;color:#888;font-size:12px}
-.features div:last-child{border:none}
-.features b{display:block;color:#d7b77e;font-size:20px;margin-bottom:8px;font-weight:400}
-.about{display:flex;flex-wrap:wrap;background:#101010;min-height:380px}
-.about-img{flex:1;min-width:400px;position:relative;min-height:380px;background:#000}
-.about-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
-.about-text{flex:1;min-width:400px;background:#121212;display:flex;flex-direction:column;justify-content:center;padding:50px;text-align:right}
-.about-text h2{color:#e9c78a;font-size:24px;font-weight:800}
-.about-text p{color:#777;font-size:13px;margin:14px 0;line-height:1.8}
-.outline-btn{border:1px solid #3a3a3a;color:#999;padding:10px 22px;border-radius:6px;font-size:11px;text-decoration:none;width:fit-content;margin-top:10px;display:inline-block}
-.elegance{position:relative;height:420px;overflow:hidden;background:#000;display:flex;align-items:center;justify-content:center}
-.elegance img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.55}
-.elegance::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,0.2))}
-.elegance-content{position:relative;z-index:2;text-align:center;padding:30px}
-.elegance-content h2{color:#e9c78a;font-size:28px;font-weight:800}
-.elegance-content p{color:#bbb;font-size:12px;margin:12px auto;line-height:1.8;max-width:420px}
-.services-sec{background:#090909;padding:30px 20px}
-.services-sec h3{text-align:center;color:#d7b77e;font-size:18px;margin-bottom:20px;letter-spacing:1px}
-.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.card{position:relative;height:180px;border-radius:10px;overflow:hidden;background:#111;border:1px solid #1c1c1c}
-.card img{width:100%;height:100%;object-fit:cover;opacity:0.7}
-.card span{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,#000);padding:12px;color:#d7b77e;text-align:center;font-size:12px;font-weight:700}
-.prices{background:#0a0a0a;padding:24px 16px}
-.cat{margin:18px 0;background:#121212;border:1px solid #1e1e1e;border-radius:12px;padding:16px}
-.cat h4{color:#d7b77e;font-size:14px;margin-bottom:12px;border-bottom:1px solid #222;padding-bottom:10px}
-.row{display:flex;justify-content:space-between;padding:9px 0;color:#aaa;font-size:13px;border-bottom:1px dashed #222}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#070707;color:#fff;font-family:Tahoma,Arial}
+.top{position:sticky;top:0;z-index:99;background:#080808;border-bottom:1px solid #1a1a1a;display:flex;justify-content:space-between;align-items:center;padding:12px 18px}
+.logo{color:#d7b77e;font-weight:900;letter-spacing:2px;font-size:18px}
+.btn{border:1px solid #d7b77e;color:#d7b77e;padding:7px 14px;border-radius:20px;font-size:11px;text-decoration:none}
+.hero{height:600px;background:#000 url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200') center top/cover;display:flex;align-items:center;position:relative}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.2) 60%)}
+.hero-box{position:relative;z-index:2;padding:30px;max-width:70%}
+.hero-box h1{font-size:42px;color:#e9c78a;line-height:1.15;font-weight:900}
+.hero-box p{color:#ccc;font-size:13px;margin:16px 0;line-height:1.8;max-width:380px}
+.gold{background:#d7b77e;color:#000;padding:12px 26px;border-radius:8px;font-size:13px;font-weight:800;text-decoration:none;display:inline-block}
+.feats{display:grid;grid-template-columns:repeat(4,1fr);background:#0e0e0e;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a}
+.feats div{text-align:center;padding:18px 5px;color:#8a8a8a;font-size:11px;border-left:1px solid #1f1f1f}
+.mid{display:flex;flex-wrap:wrap;background:#101010;min-height:400px}
+.mid-img{flex:1;min-width:350px;min-height:400px;background:url('https://images.unsplash.com/photo-1634449571010-02389ed0f357?q=80&w=800') center/cover}
+.mid-txt{flex:1;min-width:350px;padding:40px;background:#111;text-align:right;display:flex;flex-direction:column;justify-content:center}
+.mid-txt h2{color:#e9c78a;font-size:24px}.mid-txt p{color:#777;font-size:13px;margin:12px 0;line-height:1.8}
+.outline{border:1px solid #333;color:#999;padding:8px 18px;border-radius:6px;font-size:11px;text-decoration:none;width:fit-content;margin-top:10px;display:inline-block}
+.hero2{height:400px;background:#000 url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200') center/cover;display:flex;align-items:center;justify-content:flex-end;position:relative}
+.hero2::after{content:'';position:absolute;inset:0;background:linear-gradient(270deg,rgba(0,0,0,0.9),transparent)}
+.hero2-box{position:relative;z-index:2;padding:30px;text-align:right;max-width:60%}
+.hero2-box h2{font-size:26px;color:#e9c78a}.hero2-box p{font-size:12px;color:#aaa;margin:12px 0;line-height:1.8}
+.services{padding:22px 12px;background:#070707}.services h3{text-align:center;color:#d7b77e;font-size:16px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.card{height:170px;border-radius:10px;overflow:hidden;background:#111;border:1px solid #1a1a1a;position:relative}
+.card img{width:100%;height:100%;object-fit:cover;opacity:0.85;display:block}
+.card span{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,#000);padding:12px;color:#d7b77e;font-size:11px;text-align:center;font-weight:700}
+.prices{padding:22px 12px;background:#0a0a0a}
+.cat{margin:18px 0;background:#111;border:1px solid #1e1e1e;border-radius:12px;padding:16px}
+.cat h4{color:#d7b77e;font-size:15px;margin-bottom:12px;border-bottom:1px solid #222;padding-bottom:10px}
+.row{display:flex;justify-content:space-between;padding:9px 0;font-size:13px;color:#bbb;border-bottom:1px dashed #222}
 .row b{color:#d7b77e}
-.big-wa{background:#d7b77e;color:#000;text-align:center;padding:16px;border-radius:28px;margin:24px auto;display:block;max-width:380px;text-decoration:none;font-weight:900;font-size:15px}
+.big{background:#d7b77e;color:#000;text-align:center;padding:16px;border-radius:28px;margin:24px auto;display:block;max-width:360px;text-decoration:none;font-weight:900;font-size:16px}
+.foot{text-align:center;padding:24px;background:#000;color:#777;font-size:12px;border-top:1px solid #1a1a1a;line-height:2.2}
+.foot b{color:#d7b77e;font-size:14px}
+@media(max-width:700px){.grid{grid-template-columns:repeat(2,1fr)}.hero-box{max-width:90%}.hero-box h1{font-size:32px}}
 </style>
 </head>
 <body>
 
-<div class="navbar">
+<div class="top">
 <div class="logo">FATMA BEAUTY</div>
-<div class="links"><a href="#">الرئيسية</a><a href="#">من نحن</a><a href="#">معرض الأعمال</a><a href="#prices">خدماتنا</a><a href="https://wa.me/905364695079">تواصل معنا</a></div>
-<a href="https://wa.me/905364695079?text=مرحبا%20فاطمة%20بدي%20احجز%20موعد" class="cta">احجزي موعدك</a>
+<a href="https://wa.me/90537407059?text=مرحبا%20بدي%20احجز%20موعد" class="btn">احجزي 0537407059</a>
 </div>
 
 <div class="hero">
-<div class="hero-bg"><img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=1200"></div>
-<div class="hero-content">
+<div class="hero-box">
 <h1>جمالك ..<br>بأدق التفاصيل</h1>
 <p>نقدم لك تجربة جمال متكاملة تجمع بين الاحترافية والعناية والرفاهية في مكان واحد</p>
-<a href="https://wa.me/905364695079?text=مرحبا%20فاطمة%20بدي%20احجز%20موعد%20♡" class="gold-btn">← احجزي موعدك الآن</a>
+<a href="https://wa.me/90537407059?text=مرحبا%20بدي%20احجز%20موعد%20♡" class="gold">← احجزي موعدك الآن</a>
 </div>
 </div>
 
-<div class="features">
-<div><b>✦</b>فريق متخصص</div>
-<div><b>♡</b>بيئة مريحة وفاخرة</div>
-<div><b>✓</b>منتجات عناية الجودة</div>
-<div><b>♦</b>نتائج مضمونة</div>
+<div class="feats">
+<div>♦ فريق متخصص</div>
+<div>♡ بيئة فاخرة</div>
+<div>✓ منتجات أصلية</div>
+<div>✦ نتائج مضمونة</div>
 </div>
 
-<div class="about">
-<div class="about-img"><img src="https://images.unsplash.com/photo-1634449571010-02389ed0f357?w=800"></div>
-<div class="about-text">
+<div class="mid">
+<div class="mid-img"></div>
+<div class="mid-txt">
 <h2>مكانك المثالي للجمال</h2>
-<p>من قصات الشعر إلى العناية بالبشرة والمكياج، نحن هنا لنبرز جمالك بأسلوب عصري وراقي.</p>
-<a href="#prices" class="outline-btn">تعرفي على خدماتنا</a>
+<p>من قصات الشعر إلى العناية بالبشرة والمكياج<br>نحن هنا لنبرز جمالك بأسلوب عصري وراقي</p>
+<a href="#prices" class="outline">تعرفي على خدماتنا</a>
 </div>
 </div>
 
-<div class="elegance">
-<img src="https://images.unsplash.com/photo-1515688594390-b649af70d282?w=1200">
-<div class="elegance-content">
+<div class="hero2">
+<div class="hero2-box">
 <h2>أناقة .. في كل تفصيلة</h2>
-<p>من شعرك إلى بشرتك، نعتني بكل تفصيل بأسلوب عصري والأنيق.</p>
-<a href="https://wa.me/905364695079?text=مرحبا%20فاطمة%20بدي%20احجز" class="outline-btn">احجزي موعدك</a>
+<p>من تسريحات الشعر الكلاسيكية إلى صيحات الموضة الجريئة<br>نصمم لك إطلالة تعكس شخصيتك</p>
+<a href="https://wa.me/90537407059?text=مرحبا%20بدي%20احجز%20موعد" class="outline">احجزي موعدك</a>
 </div>
 </div>
 
-<div class="services-sec">
+<div class="services">
 <h3>خدماتنا</h3>
-<div class="grid4">
-<div class="card"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400"><span>العناية بالشعر</span></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed1350b?w=400"><span>العناية بالبشرة</span></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400"><span>خدمات الأظافر</span></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1523263685509-57c1d050d19b?w=400"><span>المكياج</span></div>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&auto=format&fit=crop"><span>العناية بالشعر</span></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&auto=format&fit=crop"><span>العناية بالبشرة</span></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&auto=format&fit=crop"><span>خدمات الأظافر</span></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?w=400&auto=format&fit=crop"><span>المكياج</span></div>
 </div>
 </div>
 
 <div id="prices" class="prices">
-<div class="cat"><h4>👁️ رموش</h4><div class="row"><span>رفع الرموش</span><b>500 TL</b></div><div class="row"><span>رموش حرير</span><b>700 TL</b></div><div class="row"><span>رموش طبيعية</span><b>400 TL</b></div><div class="row"><span>عناية الرموش</span><b>300 TL</b></div></div>
-<div class="cat"><h4>💅 أظافر</h4><div class="row"><span>بروتيز</span><b>600 TL</b></div><div class="row"><span>جل</span><b>500 TL</b></div><div class="row"><span>مناكير دائم</span><b>400 TL</b></div><div class="row"><span>مناكير وعناية</span><b>250 TL</b></div><div class="row"><span>رسم</span><b>450 TL</b></div></div>
-<div class="cat"><h4>✨ حواجب</h4><div class="row"><span>لامينشن</span><b>400 TL</b></div><div class="row"><span>تصميم</span><b>250 TL</b></div><div class="row"><span>صبغ</span><b>200 TL</b></div></div>
-<div class="cat"><h4>✂️ شعر</h4><div class="row"><span>قص</span><b>300 TL</b></div><div class="row"><span>سشوار</span><b>250 TL</b></div><div class="row"><span>صبغة</span><b>800+ TL</b></div><div class="row"><span>أومبري</span><b>1500+ TL</b></div><div class="row"><span>هايلايت</span><b>1200+ TL</b></div><div class="row"><span>كيراتين</span><b>1000 TL</b></div><div class="row"><span>عناية</span><b>600 TL</b></div></div>
-<div class="cat"><h4>💄 مكياج</h4><div class="row"><span>يومي</span><b>500 TL</b></div><div class="row"><span>عروس</span><b>1500 TL</b></div><div class="row"><span>خطوبة</span><b>1000 TL</b></div><div class="row"><span>مناسبات</span><b>800 TL</b></div></div>
-<a href="https://wa.me/905364695079?text=مرحبا%20فاطمة%20بدي%20احجز%20موعد%20♡" class="big-wa">📱 +90 536 469 50 79 - واتساب حجز ♡</a>
+<div class="cat"><h4>👁️ خدمات الرموش</h4><div class="row"><span>رفع الرموش</span><b>500 TL</b></div><div class="row"><span>رموش حرير</span><b>700 TL</b></div><div class="row"><span>رموش طبيعية</span><b>400 TL</b></div><div class="row"><span>عناية الرموش</span><b>300 TL</b></div></div>
+<div class="cat"><h4>💅 خدمات الأظافر</h4><div class="row"><span>أظافر بروتيز</span><b>600 TL</b></div><div class="row"><span>أظافر جل</span><b>500 TL</b></div><div class="row"><span>مناكير دائم</span><b>400 TL</b></div><div class="row"><span>مناكير وعناية</span><b>250 TL</b></div><div class="row"><span>رسم أظافر</span><b>450 TL</b></div></div>
+<div class="cat"><h4>✨ خدمات الحواجب</h4><div class="row"><span>لامينشن حواجب</span><b>400 TL</b></div><div class="row"><span>تصميم حواجب</span><b>250 TL</b></div><div class="row"><span>صبغ حواجب</span><b>200 TL</b></div></div>
+<div class="cat"><h4>✂️ خدمات الشعر</h4><div class="row"><span>قص شعر</span><b>300 TL</b></div><div class="row"><span>سشوار</span><b>250 TL</b></div><div class="row"><span>صبغة شعر</span><b>ابتداءً من 800 TL</b></div><div class="row"><span>أومبري / بالياج</span><b>ابتداءً من 1.500 TL</b></div><div class="row"><span>خصل هايلايت</span><b>ابتداءً من 1.200 TL</b></div><div class="row"><span>علاج كيراتين</span><b>1.000 TL</b></div><div class="row"><span>عناية شعر</span><b>600 TL</b></div></div>
+<div class="cat"><h4>💄 خدمات المكياج</h4><div class="row"><span>مكياج يومي</span><b>500 TL</b></div><div class="row"><span>مكياج عروس</span><b>1.500 TL</b></div><div class="row"><span>مكياج خطوبة</span><b>1.000 TL</b></div><div class="row"><span>مكياج مناسبات</span><b>800 TL</b></div></div>
+<a href="https://wa.me/90537407059?text=مرحبا%20بدي%20احجز%20موعد%20♡" class="big">📱 واتساب: 0537407059 ♡</a>
+<p style="text-align:center;color:#555;font-size:11px">حتاي - انطاكيا | نستقبلكم بكل حب ♡</p>
+</div>
+
+<div class="foot">
+<b>FATMA BEAUTY</b><br>
+حتاي - انطاكيا<br>
+0537407059<br>
+بانتظاركم جميعاً ♡
 </div>
 
 </body>
